@@ -1,0 +1,17 @@
+.menu--section{
+    height: 100vh;
+    padding: 1rem;
+    background-color: #6122b2;
+    color: #fff;
+}
+.menu--section--up{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-button-cerrar{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: EnvyCode, monospace;
+    cursor: pointer;
+}

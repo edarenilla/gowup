@@ -1,0 +1,69 @@
+.datos-interesantes {
+    position: absolute;
+    top:5px;
+    left:4rem;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    color: #6122b2;
+    font-family: EnvyCode, monospace;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+
+}
+
+
+
+/**************************************************************************/
+/* === 🌎 ESTILOS GENERALES === */
+  
+  /* === 📱 MÓVIL PEQUEÑO (320px - 480px) === */
+  @media (max-width: 480px) {
+   
+  }
+  
+  /* === 📱 MÓVIL MEDIANO (481px - 640px) === */
+  @media (max-width: 640px) {
+    .datos-interesantes {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 2rem;
+        color: #fff;
+        background-color: #6122b2;
+        font-family: EnvyCode, monospace;
+        font-size: 0.8rem;
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem;
+    
+    }
+    
+  }
+  
+  /* === 📱💻 TABLET (641px - 1024px) === */
+  @media (max-width: 1024px) {
+    
+  }
+  
+  /* === 💻 LAPTOP PEQUEÑA (1025px - 1280px) === */
+  @media (max-width: 1280px) {
+    
+  }
+  
+  /* === 🖥 ESCRITORIO ESTÁNDAR (1281px - 1440px) === */
+  @media (max-width: 1440px) {
+    
+  }
+  
+  /* === 🖥 PANTALLA GRANDE (1441px - 1920px) === */
+  @media (max-width: 1920px) {
+
+  }
+  
+  /* === 🖥 4K y MÁS (1921px en adelante) === */
+  @media (min-width: 1921px) {
+}

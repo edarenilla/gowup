@@ -1,0 +1,184 @@
+
+
+.hero--section{
+    margin: 4rem 4rem 1rem 4rem;
+    height: calc(100vh - 6rem);
+    background-color: #f6f8fb;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    width: 70%;
+   
+    color: #fff;
+}
+.hero--section p{
+    color: #3f2956;
+    width: 80%;
+    font-family: canela text, serif;
+}
+.section--hero--up{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.section--hero--center{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;  
+    
+}
+.section--hero--down{
+    margin: 0;
+    padding: 0;
+   display: flex;
+   align-items: flex-end;
+}
+.section--hero--down--content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+.section--hero--center__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+}
+.section--hero--center__img img {
+    width: 80%;
+}
+.section--hero--center__text{
+    width: 60%;
+} 
+.cta-hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: EnvyCode, monospace;
+    color: #3f2956;
+    transition: all 0.3s ease-in-out;
+    background-color: #6122b2;
+    padding: 0 0.5rem;
+    color: #f4f8fe;
+}
+
+.cta-hero:hover{
+    background-color: transparent;
+    color: #6122b2;
+    border: 1px solid #6122b2;
+}  
+
+.cta-hero::before{
+    content: "Conocernos es gratis";
+}
+
+.hero--section small{
+    color:#3f2956;
+    font-size: 1rem;
+    font-family: EnvyCode, monospace;
+    font-weight: 100;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+/**************************************************************************/
+/* === 🌎 ESTILOS GENERALES === */
+  
+  /* === 📱 MÓVIL PEQUEÑO (320px - 480px) === */
+  @media (max-width: 480px) {
+   
+  }
+  
+  /* === 📱 MÓVIL MEDIANO (481px - 640px) === */
+  @media (max-width: 640px) {
+    .section--sidebar{
+        display: none;
+    }
+    .hero--section{
+        padding: 0;
+        margin: 1rem 5% 1rem 5%;
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+        overflow: hidden;
+        width: 90%;
+        height: calc(100vh - 2rem);
+    }
+    .section--hero--up{
+        justify-content: end;
+        padding-top: 2rem;
+    }
+    .section--hero--center{
+        flex-direction: column-reverse;
+    }
+    .section--hero--center__text{
+        width: 100%;
+        height: 100%;
+        padding-top: 2.5rem;
+
+    }
+
+    .section--hero--center__img img {
+        width: 120%;
+    }
+    .hero--section p{
+        font-size: 1.6rem;
+        width: 90%;
+        font-family: canela text, serif;
+    }
+    .menu-button{
+        display: block;
+        color: #3f295b;
+        font-size: 1.2rem;
+        font-family: EnvyCode, monospace;
+    }
+    
+
+    .logo{
+        width: 120px;
+    }
+    .cta-hero{
+        font-size: 1.2rem;
+    }
+    .cta-hero::before{
+        content: "WhatsApp";
+        padding: 0 1rem;
+    }
+    
+  }
+  
+  /* === 📱💻 TABLET (641px - 1024px) === */
+  @media (max-width: 1024px) {
+    
+  }
+  
+  /* === 💻 LAPTOP PEQUEÑA (1025px - 1280px) === */
+  @media (max-width: 1280px) {
+    
+  }
+  
+  /* === 🖥 ESCRITORIO ESTÁNDAR (1281px - 1440px) === */
+  @media (max-width: 1440px) {
+    
+  }
+  
+  /* === 🖥 PANTALLA GRANDE (1441px - 1920px) === */
+  @media (max-width: 1920px) {
+
+  }
+  
+  /* === 🖥 4K y MÁS (1921px en adelante) === */
+  @media (min-width: 1921px) {
+}

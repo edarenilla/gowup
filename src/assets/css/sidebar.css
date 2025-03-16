@@ -1,0 +1,139 @@
+/* Sidebar fijo en el lado derecho */
+.sidebar {
+    position: fixed;
+    top: 4rem;
+    right: 4rem;
+    z-index: 1000;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+    opacity: 0; /* Se animará con GSAP */
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: canela, serif;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block; /* Necesario para ::after */
+    color: #6122b2;
+    margin: 0;
+  }
+  
+  .sidebar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 1px; /* Puedes aumentar el grosor si lo deseas */
+    background-color: #6122b2;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.sidebar a:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  
+  .sidebar a:hover {
+    color: #3f295b;
+  }
+  
+  /* Estilos del menú de redes sociales */
+.social-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;  
+}
+
+.social-menu li {
+  text-align: right;
+  padding: 0;
+  margin-bottom: .2rem;
+}
+
+.social-menu a {
+  color: #3f295b; /* Azul claro de tu paleta */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-menu a:hover {
+  color: #6122b2; /* Rojo anaranjado */
+}
+
+
+/**************************************************************************/
+/* === 🌎 ESTILOS GENERALES === */
+  
+  /* === 📱 MÓVIL PEQUEÑO (320px - 480px) === */
+  @media (max-width: 480px) {
+   
+  }
+  
+  /* === 📱 MÓVIL MEDIANO (481px - 640px) === */
+  @media (max-width: 640px) {
+    .sidebar {
+      top: 7rem;
+      right: 1rem;
+      min-height: 60vh;
+      background-color: #6122b2;
+    }
+    .sidebar a {
+      font-size: 2.2rem;
+      color: #fff;
+    }
+    .social-menu{
+      justify-self: end;
+    }
+    .social-menu a {
+      font-size: 1.4rem;
+   
+    }
+    
+  }
+  
+  /* === 📱💻 TABLET (641px - 1024px) === */
+  @media (max-width: 1024px) {
+    
+  }
+  
+  /* === 💻 LAPTOP PEQUEÑA (1025px - 1280px) === */
+  @media (max-width: 1280px) {
+    
+  }
+  
+  /* === 🖥 ESCRITORIO ESTÁNDAR (1281px - 1440px) === */
+  @media (max-width: 1440px) {
+    
+  }
+  
+  /* === 🖥 PANTALLA GRANDE (1441px - 1920px) === */
+  @media (max-width: 1920px) {
+
+  }
+  
+  /* === 🖥 4K y MÁS (1921px en adelante) === */
+  @media (min-width: 1921px) {
+}

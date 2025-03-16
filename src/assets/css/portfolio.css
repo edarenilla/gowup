@@ -1,0 +1,76 @@
+.portfolio-section {
+    max-width: 100%;
+    margin: 0;
+    background-color: #3f2956;
+    overflow: hidden;
+    
+}
+
+.portfolio-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100vh;
+    row-gap: 20rem;
+    column-gap: 2rem;
+    background-color: #3f2956;
+    color: #fefbdd;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+/* Asegura que el primer elemento esté visible desde el inicio */
+.portfolio-item:first-child {
+}
+
+
+.portfolio-item h2{
+    font-size: 3.5rem;
+    font-family: Canela, serrif;
+    font-weight: 100;
+    line-height: 1.1;  
+    
+
+ }
+
+ .portfolio-text{
+    padding: 3rem 0 3rem 3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.portfolio-text a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    font-family: canela, serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-top: -2rem;
+}
+.portfolio-text p{
+    font-family: canela text, serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.portfolio-text a::before{
+    content: "—";
+}
+.portfolio-image{
+    margin: 0;
+    padding-left: 40%;
+    overflow: hidden;
+}
+
+.portfolio-image-img{    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+    transform: translateX(200px);
+
+  
+}

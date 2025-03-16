@@ -1,0 +1,121 @@
+.slider-container {
+    width: 100%;
+    position: relative;
+    width: 80%;
+    margin: 4rem auto;
+    margin-bottom: 0; 
+     
+  }
+  
+  .slider {
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+  }
+  
+  .slider-image img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .slider-content {
+    max-width: 800px;
+  }
+  .slider-content h2{
+    font-size: 2.5rem;
+  }
+  .slider-content h3{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #FD5C3A;
+  }
+  
+  h2, h3 {
+    font-family: "Canela", serif;
+  }
+  
+  p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 100;
+  }
+  
+  .slider-buttons {
+    display: flex;
+    gap: 10px;
+    width: auto;
+    margin-left: 58%;
+    margin-top: -50px;
+  }
+  
+  .slider-buttons button {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background: #9ad2d6;
+    color: #171717;
+    border: solid 1px #171717;
+    transition: 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-buttons button:hover {
+    background: var(--black);
+    color: #fff;
+  }
+  
+  .slider-buttons button.disabled {
+    background: #cacaca;
+    border: solid 1px #171717;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  .slider-content p {
+    min-height: 80px; 
+    
+  }
+  .slider--content--p{
+    min-height: 150px;
+    width: 70%;
+    padding-left: 2rem;
+  }
+    
+  .text-highlight {
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: var(--font-secondary);
+    color: white;
+    background-color: #171717;
+    padding: 1px 10px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+   
+  }
+  .slider-resaltado{
+    color:#FD5C3A;
+  }
+
+  .hero--empezar--gratis{
+    color: #171717;
+    text-decoration: none;
+    border-bottom: #FD5C3A solid 3px;
+    transition: 0.3s ease;
+    padding-bottom: 4px;
+  }
+
+  .hero--empezar--gratis:hover{     
+    color: #FD5C3A;
+  
+  }
+
+  

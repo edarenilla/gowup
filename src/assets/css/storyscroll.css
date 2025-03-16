@@ -1,0 +1,24 @@
+.story-container{
+    background-color: #171717;
+    color: #fff;
+    font-family: Canela, serif;
+    font-size: 3.5rem;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.story-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-section:nth-child(2) {
+    background-color: #fff;
+    color:#171717;
+}

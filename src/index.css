@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Canela Text';
+  src: url('/src/assets/fonts/CanelaText-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela Text';
+  src: url('/src/assets/fonts/CanelaText-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('/src/assets/fonts/Canela-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela Text';
+  src: url('/src/assets/fonts/CanelaText-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('/src/assets/fonts/MabryPro-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'EnvyCode';
+  src: url('/src/assets/fonts/envyCode.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Brittany';
+  src: url('/src/assets/fonts/BrittanySignature.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --black: #171717;
+  --red-orange: #FD5C3A;
+  --blue-light: #9AD2D6;
+
+  --gray: #747474;
+
+  --font-primary: 'Canela Text', serif;
+  --font-secondary: 'EnvyCode', monospace;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: #f6f8fb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-primary);
+}
+
+h1,h2,h3,h3,h3,p,small {
+  word-wrap: break-word;  /* Permite que el texto pase a la siguiente línea */
+  overflow-wrap: break-word;  /* Alternativa moderna para evitar cortes raros */
+  white-space: normal;  /* Permite saltos de línea naturales */
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
+    white-space: normal;
+}
+h4{
+  font-family: Brittany, serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #6122b2;
+}
+.code-style {
+  font-family: var(--font-secondary);
+  background: var(--gray);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--beige);
+}
+
+.color-orange {
+  color: var(--red-orange);
+}
+
+button {
+  all: unset; /* Elimina todos los estilos heredados */
+  display: inline-block; /* Evita problemas de alineación */
+  cursor: pointer; /* Mantiene el cursor de botón */
+  text-align: center; /* Asegura alineación del texto */
+}
