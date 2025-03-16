@@ -4,11 +4,13 @@ import gsap from "gsap";
 import "../../assets/css/sidebar.css";
 
 function Sidebar() {
-  const menuRef = useRef(null);
-  const menuItemsRef = useRef([]);
-  const socialMenuRef = useRef([]);
+  const menuRef = useRef<HTMLElement | null>(null);
+  const menuItemsRef = useRef<(HTMLLIElement | null)[]>([]);
+  const socialMenuRef = useRef<(HTMLLIElement | null)[]>([]);
 
   useEffect(() => {
+    if (!menuRef.current) return;
+
     gsap.fromTo(
       menuRef.current,
       { opacity: 0, x: 50 },
@@ -16,7 +18,8 @@ function Sidebar() {
     );
 
     gsap.fromTo(
-      [...menuItemsRef.current, ...socialMenuRef.current],
+      [...menuItemsRef.current.filter((el): el is HTMLLIElement => el !== null),
+      ...socialMenuRef.current.filter((el): el is HTMLLIElement => el !== null)],
       { opacity: 0, x: 30 },
       { opacity: 1, x: 0, stagger: 0.2, duration: 1, ease: "power3.out", delay: 0.5 }
     );
@@ -26,7 +29,7 @@ function Sidebar() {
     <nav className="sidebar" ref={menuRef}>
       <ul className="menu-list">
         {["Portafolio", "Acerca de nosotros", "Servicios", "Contacto"].map((item, index) => (
-          <li key={index} ref={(el) => (menuItemsRef.current[index] = el)}>
+          <li key={index} ref={(el) => { menuItemsRef.current[index] = el; }}>
             <Link to={`/${item.toLowerCase().replace(/\s+/g, "")}`}>{item}</Link>
           </li>
         ))}
@@ -39,7 +42,7 @@ function Sidebar() {
           { name: "LinkedIn", link: "https://www.linkedin.com" },
           { name: "WhatsApp", link: "https://wa.me/" }
         ].map((item, index) => (
-          <li key={index} ref={(el) => (socialMenuRef.current[index] = el)}>
+          <li key={index} ref={(el) => { socialMenuRef.current[index] = el; }}>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               {item.name}
             </a>
@@ -51,3 +54,4 @@ function Sidebar() {
 }
 
 export default Sidebar;
+

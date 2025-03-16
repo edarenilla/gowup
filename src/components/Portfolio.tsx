@@ -41,10 +41,10 @@ function Portfolio() {
     },
   ];
 
-  const rowsRef = useRef([]);
+  const rowsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useLayoutEffect(() => {
-    const elements = rowsRef.current.filter(Boolean);
+    const elements = rowsRef.current.filter((el): el is HTMLDivElement => el !== null);
     if (elements.length === 0) return;
 
     elements.forEach((row) => {
@@ -65,8 +65,7 @@ function Portfolio() {
           trigger: row,
           start: "top 80%",
           end: "top 50%",
-          toggleActions: "play none none none", // Solo se anima una vez
-          
+          toggleActions: "play none none none",
         },
       });
 
@@ -80,8 +79,8 @@ function Portfolio() {
           trigger: row,
           start: "center 80%",
           end: "center 50%",
-          toggleActions: "play none none none", // Solo se anima una vez
-          scrub:1,
+          toggleActions: "play none none none",
+          scrub: 1,
         },
       });
     });
@@ -114,4 +113,5 @@ function Portfolio() {
 }
 
 export default Portfolio;
+
 
