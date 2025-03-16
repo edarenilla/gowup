@@ -40,7 +40,7 @@ function Sidebar() {
         {[
           { name: "Instagram", link: "https://www.instagram.com" },
           { name: "LinkedIn", link: "https://www.linkedin.com" },
-          { name: "WhatsApp", link: "https://wa.me/" }
+          { name: "WhatsApp", link: "https://wa.me/+573158391821" }
         ].map((item, index) => (
           <li key={index} ref={(el) => { socialMenuRef.current[index] = el; }}>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
