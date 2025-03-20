@@ -20,15 +20,17 @@ function Home() {
   }, []);
 
   const handleNavigation = () => {
-    // Animación de salida antes de cambiar de ruta
     gsap.to(containerRef.current, {
       opacity: 0,
       y: -50,
       duration: 0.8,
       ease: "power3.in",
-      onComplete: () => navigate("/historia"), // Cambia la ruta
+      onComplete: () => {
+        setTimeout(() => navigate("/historia"), 0);
+      },
     });
   };
+  
 
   return (
     <div ref={containerRef} className="home-container">
