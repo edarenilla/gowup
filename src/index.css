@@ -1,3 +1,9 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+ }
 @font-face {
   font-family: 'Canela Text';
   src: url('/src/assets/fonts/CanelaText-Regular.woff2') format('woff2');
@@ -52,25 +58,13 @@
   font-display: swap;
 }
 
-:root {
-  --black: #171717;
-  --red-orange: #FD5C3A;
-  --blue-light: #9AD2D6;
 
-  --gray: #747474;
-
-  --font-primary: 'Canela Text', serif;
-  --font-secondary: 'EnvyCode', monospace;
-}
 
 body {
-  font-family: var(--font-primary);
   background-color: #f6f8fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0;
 }
 
 h1, h2, h3 {
