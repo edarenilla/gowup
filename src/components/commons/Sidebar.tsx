@@ -38,7 +38,7 @@ function Sidebar() {
       {/* Menú de redes sociales en la parte inferior */}
       <ul className="social-menu">
         {[
-          { name: "Instagram", link: "https://www.instagram.com" },
+          { name: "Instagram", link: "https://www.instagram.com/gowupmarketing.co/" },
           { name: "LinkedIn", link: "https://www.linkedin.com" },
           { name: "WhatsApp", link: "https://wa.me/+573158391821" }
         ].map((item, index) => (
