@@ -7,6 +7,7 @@ import logo from "../../public/images/logo-gowup.svg";
 import grillo from "../../public/images/grillo.png";
 import { BsArrowRight } from "react-icons/bs";
 import SliderDatos from "./commons/SliderDatos";
+import useAlturaReal from "./hook/UseAlturaReal";
 
 
 const Hero = () => {
@@ -18,8 +19,13 @@ const Hero = () => {
     navigate("/menu"); // Redirige a /menu
   };
 
+  const alturaReal = useAlturaReal();
+
   return (
-    <section className="hero--section">
+    <section className="hero--section"
+    style={{
+      height: `${alturaReal}px`,
+    }}>
       <SliderDatos />
       <div className="section--hero--up">
           <button 
